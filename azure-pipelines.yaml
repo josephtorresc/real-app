@@ -48,17 +48,17 @@ stages:
         pip freeze
       displayName: 'Install prerequisites'
     
-    - script: |
-        pushd '$(projectRoot)'
-        python manage.py test --testrunner xmlrunner.extra.djangotestrunner.XMLTestRunner --no-input
-      condition: succeededOrFailed()
-      displayName: 'Run tests'
+    # - script: |
+    #     pushd '$(projectRoot)'
+    #     python manage.py test --testrunner xmlrunner.extra.djangotestrunner.XMLTestRunner --no-input
+    #   condition: succeededOrFailed()
+    #   displayName: 'Run tests'
     
-    - task: PublishTestResults@2
-      condition: succeededOrFailed()
-      inputs:
-        testResultsFiles: "**/TEST-*.xml"
-        testRunTitle: 'Python $(PYTHON_VERSION)'
+    # - task: PublishTestResults@2
+    #   condition: succeededOrFailed()
+    #   inputs:
+    #     testResultsFiles: "**/TEST-*.xml"
+    #     testRunTitle: 'Python $(PYTHON_VERSION)'
 
     - task: ArchiveFiles@2
       inputs: 
