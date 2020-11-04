@@ -1,0 +1,82 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-register</title>
+    <link rel="stylesheet" href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+
+    <h1>Example Django project</h1>
+
+    <!-- <div class="align">
+        <h2>Turismo real</h2>
+        <div class="card">
+            <div class="head">
+                <div></div>
+                <a href="#login" class="selected" id=login>Iniciar sesión</a>
+                <a href="#register" id="register">Registrarse</a>
+                <div></div>
+            </div>
+            <div class="tabs">
+                <form action="">
+                    <div class="inputs item">
+                        <div class="input wrapper">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" placeholder="Email" required> 
+                        </div>
+                        <div class="input wrapper">
+                            <input type="password" placeholder="Contraseña" required >
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <div></div>
+                    </div>
+                    <button>Iniciar sesión</button>
+                    <div class="forget-pass">
+                        <span><a href="#">¿Olvidó su contraseña?</a></span>
+                    </div>
+                </form>
+                <form action="">
+                    <div class="inputs item">
+                        <div class="input wrapper">
+                            <input type="Email" placeholder="Email*" required>
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="input wrapper">
+                            <input type="text" placeholder="Nombres*" required>
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="input wrapper">
+                            <input type="text" placeholder="Apellidos*" required>
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="input wrapper">
+                            <input type="number" placeholder="Teléfono* (ej: 912345678)" pattern="[0-9]" required>
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="input wrapper">
+                            <input type="password" placeholder="Contraseña*" required>
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <div class="input wrapper">
+                            <input type="password" placeholder="Repetir contraseña*" required>
+                            <i class="fas fa-lock"></i>
+                        </div>
+                    </div>
+                    <button>Registrarse</button>
+                </form>
+            </div>
+        </div>
+    </div> -->
+
+    <script src="{% static 'vendor/jquery/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/popper.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+</html>
